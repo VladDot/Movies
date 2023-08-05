@@ -1,12 +1,13 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import useGetData from "../../hooks/data";
+import { getAllMovies } from "../../utils/generateUrl";
 
 const Movies = () => {
+    const popularMovies = useGetData(getAllMovies("popular"));
+    console.log({ popularMovies: popularMovies });
     return (
-        <div>
-            Movies
-            <Link to="/">Home</Link>
-        </div>
+        <>
+            <p>Movies</p>
+        </>
     );
 };
 
