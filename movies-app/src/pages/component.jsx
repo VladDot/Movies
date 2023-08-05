@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Home/component";
 import Login from "./Login/component";
@@ -49,3 +49,4 @@ const NavigateComponent = () => {
 };
 
 export default NavigateComponent;
+ */

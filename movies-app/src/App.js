@@ -1,11 +1,15 @@
-import { Navigate } from "react-router-dom";
-import NavigateComponent from "./pages/component";
+import Footer from "./components/Footer/component";
+import Header from "./components/Header/component";
+
+import Routes from "./routes";
 
 function App() {
     return (
-        <div className="App">
-            <NavigateComponent />
-        </div>
+        <>
+            <Header />
+            <Routes />
+            <Footer />
+        </>
     );
 }
 

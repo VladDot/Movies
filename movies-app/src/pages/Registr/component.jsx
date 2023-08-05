@@ -1,7 +1,11 @@
 import React from "react";
 
 const Registr = () => {
-    return <div>Registr</div>;
+    return (
+        <>
+            <p>Registr</p>
+        </>
+    );
 };
 
 export default Registr;
