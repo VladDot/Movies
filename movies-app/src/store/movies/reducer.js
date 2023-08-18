@@ -3,13 +3,17 @@ import {
     MOVIES_TOP_RATED,
     MOVIES_UPCOMING,
     POPULAR_MOVIES,
+    TRENDING_MOVIES_DAY,
+    TRENDING_MOVIES_WEEK,
 } from "../types";
 
 const initialMoviesState = {
-    popularMovies: [],
+    popularMovies: {},
     upcomingMovies: [],
     topRateMovies: [],
     nowPlayingMovies: [],
+    trendingWeekMovies: {},
+    trendingDayMovies: {},
 };
 
 export const moviState = (state = initialMoviesState, action) => {
@@ -17,7 +21,7 @@ export const moviState = (state = initialMoviesState, action) => {
         case POPULAR_MOVIES:
             return {
                 ...state,
-                popularMovies: [...action.payload],
+                popularMovies: { ...action.payload },
             };
         case MOVIES_UPCOMING:
             return {
@@ -33,6 +37,16 @@ export const moviState = (state = initialMoviesState, action) => {
             return {
                 ...state,
                 nowPlayingMovies: [...action.payload],
+            };
+        case TRENDING_MOVIES_DAY:
+            return {
+                ...state,
+                trendingDayMovies: { ...action.payload },
+            };
+        case TRENDING_MOVIES_WEEK:
+            return {
+                ...state,
+                trendingWeekMovies: { ...action.payload },
             };
         default:
             return state;

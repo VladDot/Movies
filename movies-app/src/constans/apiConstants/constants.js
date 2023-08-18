@@ -15,8 +15,6 @@ export const API_MOVIE_CHANGE = `${API_URL}movie/movie_id/changes?page=1`;
 
 export const API_TV_CHANGE = `${API_URL}tv/series_id/changes?page=1`;
 
-//////////////
-export const API_PEOPLE_LIST = `${API_URL}person/popular?language=en-US&page=1`;
 ///////////////
 export const API_SEARCH_MOVIE = `${API_URL}search/movie?include_adult=false&language=en-US&page=1`;
 ////////////
@@ -31,3 +29,8 @@ export const API_AIRING_TODAY_TV_SHOWS = `${API_URL}tv/airing_today?language=en-
 export const API_ON_RHE_AIR_TV_SHOWS = `${API_URL}tv/on_the_air?language=en-US&page=1`;
 
 export const API_TOP_RATED_TV_SHOWS = `${API_URL}tv/top_rated?language=en-US&page=1`;
+
+/* People */
+export const API_PEOPLE_LIST = `${API_URL}person/popular?language=en-US&page=1`;
+
+export const API_PERSON = `${API_URL}person/5?language=en-US`;

@@ -17,3 +17,11 @@ export const getMoviesTrending = (topic) =>
 
 export const getAllTv = (topic) =>
     `${API_URL}tv/${topic}?api_key=${REACT_APP_API_KEY}`;
+
+export const getTv = (id) => `${API_URL}tv/${id}?api_key=${REACT_APP_API_KEY}`;
+
+export const getPerson = (id) =>
+    `${API_URL}person/${id}?api_key=${REACT_APP_API_KEY}`;
+
+export const getPopular = (topic) =>
+    `${API_URL}/${topic}/popular?api_key=${REACT_APP_API_KEY}`;

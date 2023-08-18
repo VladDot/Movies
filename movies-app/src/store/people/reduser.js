@@ -1,7 +1,7 @@
-import { POPULAR_PEOPLE } from "../types";
+import { PERSONE, POPULAR_PEOPLE } from "../types";
 
 const initialPeoplesState = {
-    popularPeople: [],
+    popularPeoples: {},
 };
 
 export const peopleState = (state = initialPeoplesState, action) => {
@@ -9,7 +9,12 @@ export const peopleState = (state = initialPeoplesState, action) => {
         case POPULAR_PEOPLE:
             return {
                 ...state,
-                popularPeople: [...action.payload],
+                popularPeoples: { ...action.payload },
+            };
+        case PERSONE:
+            return {
+                ...state,
+                persone: [...action.payload],
             };
 
         default:
