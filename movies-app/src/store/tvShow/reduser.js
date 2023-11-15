@@ -6,7 +6,7 @@ import {
 } from "../types";
 
 const initialPTvShowState = {
-    popularTvShows: [],
+    popularTvShows: {},
     airingTodayTVShow: [],
     onTheAirTVShow: [],
     topRatedTVShow: [],
@@ -17,7 +17,7 @@ export const tvShowState = (state = initialPTvShowState, action) => {
         case POPULAR_TV_SHOWS:
             return {
                 ...state,
-                popularTvShows: [...action.payload],
+                popularTvShows: { ...action.payload },
             };
         case AIRING_TODAY_TV_SHOWS:
             return {

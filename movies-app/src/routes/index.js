@@ -2,15 +2,19 @@ import React from "react";
 import { Route, Routes as RoutesReact } from "react-router-dom";
 
 import { routes } from "./routesConstants";
-import Home from "../pages/Home/component";
-import Login from "../pages/Login/component";
-import Registr from "../pages/Registr/component";
-import Movies from "../pages/Movies/component";
-import TVShow from "../pages/TVShow/component";
-import PopularPeople from "../pages/PopularPeople/component";
-import TVPage from "../pages/TVPage/component";
-import MoviPage from "../pages/MoviPage/component";
+
+import Registr from "../pages/registr/component";
+import Movies from "../pages/movies/component";
+import TVShow from "../pages/tvShow/component";
+import PopularPeople from "../pages/popularPeople/component";
+
+import MoviPage from "../pages/moviPage/component";
 import MovieDetails from "../pages/movieDetails/component";
+import Login from "../pages/login/component";
+import Persone from "../pages/persona/component";
+import Home from "../pages/home/component";
+import TVPage from "../pages/tvDetails/component";
+import Error from "../pages/error/component";
 
 const Routes = () => {
     return (
@@ -44,12 +48,20 @@ const Routes = () => {
                 element={<PopularPeople />}
             />
             <Route
-                path={routes.tvPage}
+                path={routes.persone}
+                element={<Persone />}
+            />
+            <Route
+                path={routes.tvDetails}
                 element={<TVPage />}
             />
             <Route
                 path={routes.moviePage}
                 element={<MoviPage />}
+            />
+            <Route
+                path={routes.error}
+                element={<Error />}
             />
         </RoutesReact>
     );

@@ -5,6 +5,7 @@ import { getMovie } from "../../utils/generateUrl";
 const MovieDetails = () => {
     const params = useParams();
     const movieDetails = useGetData(getMovie(params.movieId));
+    console.log(params.movieId);
     console.log({ movieDetails: movieDetails });
     return (
         <>

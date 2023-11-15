@@ -4,6 +4,7 @@ export const MOVIES_TOP_RATED = "MOVIES_TOP_RATED";
 export const MOVIES_UPCOMING = "MOVIES_UPCOMING";
 
 export const POPULAR_PEOPLE = "POPULAR_PEOPLE";
+export const PERSONE = "PERSONE";
 
 export const CHANGE_TV_SHOW = "CHANGE_TV_SHOW";
 export const CHANGE_MOVIE = "CHANGE_MOVIE";
